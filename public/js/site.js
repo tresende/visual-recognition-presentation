@@ -71,9 +71,10 @@ $(document).ready(function () {
                 context.strokeStyle = 'red';
                 context.stroke();
 
-                context.font = "20px Arial";
+                context.font = "20px Arial"
+                context.fillStyle = 'white';
                 var text = "Age: " + rows[i].age.min + " - " + rows[i].age.max;
-                text += "";
+                context.fillText(text, face_location.left, face_location.top + face_location.height + 20);
                 context.fillText(text, face_location.left, face_location.top + face_location.height + 20);
 
             }
