@@ -28,7 +28,6 @@ $(document).ready(function () {
 
     var generalModel = function (evt) {
         handleFileSelect(evt, '/api/item/', function (rows) {
-            ///por classificacao
             var html = "<table class='table table-striped'>";
             for (var i = 0; i < rows.length; i++) {
                 html += "<tr>";
@@ -42,8 +41,6 @@ $(document).ready(function () {
     };
 
     var faceDetection = function (evt) {
-
-
         handleFileSelect(evt, '/api/face/', function (data) {
             var img = document.getElementById("scream");
             var canvas = document.getElementById('myCanvas');
