@@ -40,7 +40,7 @@ typings/
 
 # Optional npm cache directory
 .npm
-
+/temp/*.png
 # Optional eslint cache
 .eslintcache
 
